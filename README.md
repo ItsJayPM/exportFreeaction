@@ -6,3 +6,6 @@ Add both files to your Scripts folder.
 
 # Usage
 tbd
+
+# License
+free to use and modify just credit me
