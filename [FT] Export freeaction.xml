@@ -1,0 +1,14 @@
+<dialog id="gg_dialog" title="Export freeaction" buttons="accept, cancel" >
+	<grid>
+		<columns>
+			<column />
+			<column />
+		</columns>
+		<rows>
+			<row>
+				<label value="Additional non-linked symbols to clean contents of (comma seperated): "/>
+				<textbox id="targets" value="DELETEME,theHead,theProp" />
+			</row>
+		</rows>
+	</grid>
+</dialog>
