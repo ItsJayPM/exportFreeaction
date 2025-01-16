@@ -45,9 +45,11 @@ function deleteUnused()
 		{
 			//If we don't have a linked symbol, check if the symbol is a target...
 			//If it is, we remove the contents.
+			//Splitting is necessary to make it work in folders.
+			var itemSplit = item.name.split("/");
 			for (var j = 0; j < targets.length; j++)
 			{
-				if (item.name == targets[j])
+				if (itemSplit[itemSplit.length - 1] == targets[j])
 				{
 					lib.selectItem(item.name);
 					lib.editItem();
