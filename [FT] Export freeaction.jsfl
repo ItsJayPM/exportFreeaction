@@ -16,6 +16,7 @@ else
 		targets = gg_dialog.targets.split(",");
 		deleteUnused();
 		changeBaseClasses();
+		alert("Processing finished! Simply export the movie to produce the freeaction file. Remember to double check that you got everything you wanted cleared out removed, anything stored in other files should be gone.");
 	}
 }
 
@@ -119,11 +120,11 @@ function changeBaseClasses()
 				case "HANDS":
 					item.linkageBaseClass = "anifire.core.GoHands";
 					break;
-				case "BEHIND BACK":
-					item.linkageBaseClass = "anifire.core.GoBehindBack";
+				case "BEHIND BODY":
+					item.linkageBaseClass = "anifire.core.GoBehindBody";
 					break;
 				default:
-					alert("Failed to find a matching class for " + item.name + ". Make sure you put it into a recognized folder.\n(e.g.: \"UPPER\",\"LOWER\",\"HAIR\",\"FEET\",\"HANDS\",\"BEHIND BACK\")");
+					alert("Failed to find a matching class for " + item.name + ". Make sure you put it into a recognized folder.\n(e.g.: \"UPPER\",\"LOWER\",\"HAIR\",\"FEET\",\"HANDS\",\"BEHIND BODY\")");
 					break;
 			}
 		}
