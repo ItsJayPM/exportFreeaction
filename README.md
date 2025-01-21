@@ -1,8 +1,8 @@
 # ![exportFreeactionn](./docs/logo.svg)
-A .JSFL script the speeds up making freeaction themes for GoAnimate, by automatically clearing graphics, removing unused symbols, and setting up linkages.
+A .JSFL script the speeds up making freeaction themes, by automatically clearing graphics, removing unused symbols, and setting up linkages.
 
 ## Setup
-Add both files to your Scripts folder. Also make sure the `anifire` folder is included in the same place where your fla is building from.
+Add both files to your Scripts folder. Also make sure the `anifire` folder is included in the same place where your `.fla` is building from.
 
 ## Usage
 1. Before using, make sure your libraries are organized into folders with their respective types (e.g.: `UPPER`,`LOWER`,`HAIR`,`FEET`,`HANDS`,`BEHIND BODY`).
