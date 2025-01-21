@@ -10,7 +10,7 @@ else
 	var oldLinkHavers = [];
 	var targets = [];
 
-	var gg_dialog = dom.xmlPanel(fl.configURI+"Commands/[FT] Export freeaction.xml");
+	var gg_dialog = dom.xmlPanel(fl.configURI+"Commands/[FT] Export Freeaction.xml");
 
 	if (gg_dialog.dismiss == "accept") {
 		targets = gg_dialog.targets.split(",");
