@@ -1,4 +1,4 @@
-# [FT] Export freeaction
+# ![exportFreeactionn](./docs/logo.svg)
 A .JSFL script the speeds up making freeaction themes for GoAnimate, by automatically clearing graphics, removing unused symbols, and setting up linkages.
 
 ## Setup
