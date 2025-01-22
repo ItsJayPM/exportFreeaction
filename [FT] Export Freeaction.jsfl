@@ -117,14 +117,24 @@ function changeBaseClasses()
 				case "FEET":
 					item.linkageBaseClass = "anifire.core.GoFeet";
 					break;
-				case "HANDS":
-					item.linkageBaseClass = "anifire.core.GoHands";
+				case "LEFT HAND":
+					item.linkageBaseClass = "anifire.core.GoLeftHand";
+					break;
+				case "RIGHT HAND":
+					if (item.linkageClassName.split("_")[item.linkageClassName.split("_").length - 1] == "upper")
+					{
+						item.linkageBaseClass = "anifire.core.GoRightUpperHand";
+					}
+					else
+					{
+						item.linkageBaseClass = "anifire.core.GoRightLowerHand";
+					}
 					break;
 				case "BEHIND BODY":
 					item.linkageBaseClass = "anifire.core.GoBehindBody";
 					break;
 				default:
-					alert("Failed to find a matching class for " + item.name + ". Make sure you put it into a recognized folder.\n(e.g.: \"UPPER\",\"LOWER\",\"HAIR\",\"FEET\",\"HANDS\",\"BEHIND BODY\")");
+					fl.trace("Failed to find a matching class for " + item.name + ". Make sure you put it into a recognized folder.\n(e.g.: \"UPPER\",\"LOWER\",\"HAIR\",\"FEET\",\"LEFT HAND\",\"RIGHT HAND\",\"BEHIND BODY\")");
 					break;
 			}
 		}
